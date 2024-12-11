@@ -15,4 +15,3 @@ class Event_History extends Model
     // Add fillable fields if needed
     protected $fillable = ['name', 'location', 'time_held'];
 }
-

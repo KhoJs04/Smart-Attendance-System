@@ -43,5 +43,3 @@ class UserController extends Controller
         return view('admin.staff_registration', ['users' => $users]);
     }
 }  
-
-
