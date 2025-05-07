@@ -5,7 +5,7 @@
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
-                    <a href="{{ route('dashboard') }}">
+                    <a href="{{ route('admin-dashboard') }}">
                         <img src="{{ asset('logo/icon-poli.png')}}" width="100px" height="100px">
                     </a>
                 </div>
@@ -18,8 +18,11 @@
                     <x-nav-link :href="route('registration')" :active="request()->routeIs('registration')">
                         {{ __('Users') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('test')" :active="request()->routeIs('about-us')">
-                        {{ __('Test') }}
+                    <x-nav-link :href="route('event-management')" :active="request()->routeIs('event-management')">
+                        {{ __('Event') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('controller')" :active="request()->routeIs('controller')">
+                        {{ __('Controller') }}
                     </x-nav-link>
                 </div>
             </div>
@@ -42,10 +45,6 @@
                     <x-slot name="content">
                         <x-dropdown-link :href="route('profile.edit')">
                             {{ __('Profile') }}
-                        </x-dropdown-link>
-
-                        <x-dropdown-link :href="route('profile.edit')">
-                            {{ __('Settings') }}
                         </x-dropdown-link>
 
                         <!-- Authentication -->

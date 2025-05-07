@@ -21,7 +21,11 @@ class User extends Authenticatable implements MustVerifyEmail
         'matrixno',
         'email',
         'password',
-        
+        'role',
+        'email_verified_at',
+        'fingerprint_id',
+        'new_face_id',
+        'image'
     ];
 
     /**
@@ -32,7 +36,6 @@ class User extends Authenticatable implements MustVerifyEmail
     protected $hidden = [
         'password',
         'remember_token',
-        'role'
     ];
 
     /**
